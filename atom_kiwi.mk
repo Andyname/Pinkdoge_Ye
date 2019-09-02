@@ -15,9 +15,12 @@
 $(call inherit-product, device/huawei/kiwi/full_kiwi.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/atom/config/common.mk)
 
-PRODUCT_NAME := lineage_kiwi
+PRODUCT_NAME := atom_kiwi
 BOARD_VENDOR := huawei
 
 PRODUCT_GMS_CLIENTID_BASE := android-huawei
+TARGET_BOOT_ANIMATION_RES := 1080
+export ATOM_BUILD_TYPE=Pinkdoge
+TARGET_GAPPS_ARCH := arm64
